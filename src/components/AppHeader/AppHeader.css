@@ -1,0 +1,41 @@
+.header-container {
+  padding: 0.7rem 1rem;
+  background: var(--primary);
+  border-radius: 15px;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.75rem
+}
+
+.nav-items li {
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.login-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.login-section button,
+p {
+  cursor: pointer;
+}
+
+.login-section button.join {
+  color: var(--black);
+  border: none;
+  background: var(--white);
+  border-radius: 16px;
+  padding: 0.5rem 1rem;
+}
