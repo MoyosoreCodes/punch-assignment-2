@@ -6,4 +6,5 @@
   padding: unset;
   gap: .2rem;
   height: 60px;
+  color: var(--secondary);
 }

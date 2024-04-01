@@ -1,12 +1,16 @@
 import './App.css';
+import AppFooter from './components/AppFooter/AppFooter';
 import AppHeader from './components/AppHeader/AppHeader';
 
 function App() {
 
   return (
-    <main className='website-container'>
-      <AppHeader />
-    </main>
+    <>
+      <div className='website-container'>
+        <AppHeader />
+      </div>
+      <AppFooter />
+    </>
   )
 }
 

@@ -11,7 +11,8 @@
   -moz-osx-font-smoothing: grayscale;
   --primary: #525AA0;
   --black: #202229;
-  --white: #FFF
+  --white: #FFF;
+  --secondary: #FFBE2E;
 }
 
 *,
