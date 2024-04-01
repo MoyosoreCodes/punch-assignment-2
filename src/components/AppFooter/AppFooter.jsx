@@ -33,13 +33,13 @@ function AppFooter() {
           <h1>Connecting the right people to the right businesses.</h1>
           <div className="footer-links">
             {
-              Object.entries(footerLinks).map(item => {
-                return <div className="items">
+              Object.entries(footerLinks).map((item, index) => {
+                return <div className="items" key={index}>
                   <h4 className="label">
                     {item[0].toUpperCase()}
                   </h4>
                   <div className="item">
-                    {item[1]?.map(i => <p>{i}</p>)}
+                    {item[1]?.map((i, idx) => <p key={idx}>{i}</p>)}
                   </div>
                 </div>
               })

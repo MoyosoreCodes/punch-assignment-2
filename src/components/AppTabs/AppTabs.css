@@ -1,0 +1,30 @@
+.tab-container {
+  background: #d2d2d2;
+  color: #202229;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.tab-container,
+.tab-item {
+  border-radius: 15px;
+}
+
+.tab-item {
+  padding: 0.7rem 1.7rem;
+  text-align: center;
+}
+
+.active {
+  background: #C7F4C2;
+  font-weight: 600px;
+}
+
+@media screen and (max-width: 900px) {
+  .tab-item {
+    padding: 0.7rem;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}

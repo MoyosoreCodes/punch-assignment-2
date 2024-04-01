@@ -29,7 +29,7 @@ footer>.items {
   gap: 1rem;
 }
 
-.top p {
+.top>p {
   opacity: 0.8;
 }
 
@@ -37,18 +37,18 @@ footer>.items {
   gap: 1.5rem
 }
 
-.link h4 {
+.link>h4 {
   color: #C6C4C4;
   opacity: 0.4;
 }
 
-.link .buttons {
+.link>.buttons {
   display: flex;
   align-items: center;
   gap: 1rem
 }
 
-.link .buttons button {
+.link>.buttons>button {
   background-color: rgba(198, 196, 196, 0.05);
   color: #EDEFFF;
   padding: 0.5rem 2.5rem;
@@ -66,12 +66,12 @@ footer>.items {
   color: var(--white);
 }
 
-.bottom .policy {
+.bottom>.policy {
   display: flex;
   gap: 2rem;
 }
 
-.bottom .policy p {
+.bottom>.policy>p {
   color: #C6C4C4;
   opacity: 0.5;
   text-decoration: underline;
