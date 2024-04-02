@@ -63,12 +63,15 @@
 
   .services>.content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
 
 
 @media screen and (max-width: 720px) {
+  .services {
+    width: fit-content
+  }
   .services>.content {
     display: flex;
     flex-direction: column;

@@ -44,16 +44,16 @@ footer>.items {
   color: var(--white);
 }
 
-.left,
-.top,
-.link,
-.right {
+.items>.left,
+.items>.top,
+.items>.link,
+.items>.right {
   display: flex;
   flex-direction: column;
 }
 
-.left,
-.right {
+.items>.left,
+.items>.right {
   gap: 2.5rem;
 }
 
