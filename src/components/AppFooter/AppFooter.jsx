@@ -1,6 +1,6 @@
 import "./AppFooter.css";
 import AppLogo from "../AppLogo/AppLogo";
-import AppIcon from "../svgs/AppIcon";
+import appIcon from '../../assets/app-icon.svg'
 
 function AppFooter() {
   const footerLinks = {
@@ -18,11 +18,9 @@ function AppFooter() {
     <>
       <footer>
         <div className="top-section">
-          <div className="footer-content">
+          <div className="footer-content diagonal">
             <h1>Need a job done, and done well? Get started</h1>
-            <div className="icon">
-              <AppIcon />
-            </div>
+            <img src={appIcon} />
           </div>
         </div>
         <div className="items">

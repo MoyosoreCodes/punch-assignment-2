@@ -29,11 +29,16 @@ footer>.top-section {
 
 .footer-content>.icon {
   background: var(--black);
-  padding: 1.5rem;
-  border-radius: 15px;
-  width: fit-content;
-  height: fit-content;
+  padding: 1rem;
+  border-radius: 30px;
+  width: 65px;
+  height: 65px;
   transform: rotate(90deg);
+}
+
+
+.footer-content>.icon>svg {
+  width: 30px;
 }
 
 footer>.items {
@@ -131,6 +136,15 @@ footer>.items {
 @media screen and (max-width: 900px) {
   footer>.top-section {
     padding: 2rem
+  }
+
+  .footer-content> h1 {
+    font-size: 1.5rem;
+  }
+
+  .footer-content {
+    height: fit-content;
+    padding: 3rem 1.5rem;
   }
 
   footer .items,

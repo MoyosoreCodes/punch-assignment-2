@@ -16,7 +16,7 @@
   gap: 1.75rem
 }
 
-.nav-items > li {
+.nav-items>li {
   list-style: none;
   text-align: center;
   cursor: pointer;
@@ -28,8 +28,8 @@
   gap: 1.5rem;
 }
 
-.login-section > button,
-.login-section > p {
+.login-section>button,
+.login-section>p {
   cursor: pointer;
 }
 

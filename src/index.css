@@ -25,6 +25,24 @@
   margin: 0;
 }
 
+.diagonal {
+  -webkit-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+}
+
+.diagonal>* {
+  -webkit-transform: skewY(2deg);
+  transform: skewY(2deg);
+  -ms-transform: skewY(2deg);
+}
+
+.title {
+  font-size: 3.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -61,14 +79,8 @@ h6 {
   isolation: isolate;
 }
 
-/* @media screen and (max-width: 900px) {
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    text-align: center;
+@media screen and (max-width: 900px) {
+  .title {
+    font-size: 1.9rem;
   }
-} */
+}

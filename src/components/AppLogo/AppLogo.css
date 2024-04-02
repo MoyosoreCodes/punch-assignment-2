@@ -8,3 +8,7 @@
   height: 60px;
   color: var(--secondary);
 }
+
+.logo>.icon {
+  height: 22px;
+}

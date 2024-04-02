@@ -1,0 +1,105 @@
+.services-section,
+.services-section>.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 2rem;
+}
+
+.services-section {
+  background: #EDEFFF;
+  padding: 4rem 3rem;
+}
+
+.services-section>.title {
+  font-size: 2.5rem;
+  max-width: 900px;
+  align-self: center;
+}
+
+.services-section>.content>.item {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  width: 100%;
+  align-items: center;
+}
+
+.content>.item>.left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 25%;
+}
+
+.content>.item>.right>.detail {
+  text-align: left;
+  align-self: center;
+  width:100%
+}
+
+.content>.item>.left>.action>.icon {
+  width: fit-content;
+  transform: rotate(-90deg);
+}
+
+.left>.sub {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.left>.sub>.sub-item {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.left>.sub>.sub-item {
+  gap: 0.7rem
+}
+
+.left>.action {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.right>p>.more {
+ font-size: 18px;
+}
+.right>p>.more {
+  font-weight: 600;
+}
+
+.content>.item>.left>.label {
+  color: var(--black);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+
+@media screen and (max-width: 900px) {
+  .services-section>.content>.item {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem
+  }
+
+  .services-section>.title {
+    font-size: 1.7rem;
+  }
+
+  .left>.sub {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content>.item>.left {
+    width: 100%;
+  }
+}

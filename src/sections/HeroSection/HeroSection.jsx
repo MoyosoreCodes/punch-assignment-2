@@ -6,7 +6,7 @@ function HeroSection() {
 
   const [selectedTab, setSelectedTab] = useState(null);
   const ITServices = ["Python Developer", "Data Scientist", "Shopify Developer", "Shopify Developer", "Front End Developer", "Python Developer", "MERN Stack Developer", "Shopify Developer", "Full Stack Developer","Full Stack Developer", "Python Developer", "Explore More"];
-  const DesignServices = ["Branding", "Email design", "Mobile Design", "Motion graphics and Animation", "Photography", "Product design", "User interface and user experience", "Websites and web-apps", "Explore More"]
+  const DesignServices = ["Branding", "Email design", "Mobile Design", "Illustration Artist", "Photography", "Product design", "Unreal Engine   ", "Websites and web-apps", "Explore More"]
 
   const options = ["IT & Development", "Design and Creative"];
   const tabContent = {
