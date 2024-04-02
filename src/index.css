@@ -26,15 +26,15 @@
 }
 
 .diagonal {
-  -webkit-transform: skewY(-2deg);
-  transform: skewY(-2deg);
-  -ms-transform: skewY(-2deg);
+  -webkit-transform: skewY(-2.5deg);
+  transform: skewY(-2.5deg);
+  -ms-transform: skewY(-2.5deg);
 }
 
 .diagonal>* {
-  -webkit-transform: skewY(2deg);
-  transform: skewY(2deg);
-  -ms-transform: skewY(2deg);
+  -webkit-transform: skewY(2.5deg);
+  transform: skewY(2.5deg);
+  -ms-transform: skewY(2.5deg);
 }
 
 .title {
