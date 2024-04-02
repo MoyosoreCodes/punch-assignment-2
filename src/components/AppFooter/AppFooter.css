@@ -4,6 +4,38 @@ footer {
   flex-direction: column;
 }
 
+footer>.top-section {
+  background: #292B34;
+  padding: 6rem;
+  padding-bottom: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform: skewX(-20deg); */
+}
+
+.footer-content {
+  background: var(--primary);
+  width: 100%;
+  padding: 4rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+  /* transform: skewX(20deg); */
+}
+
+.footer-content>.icon {
+  background: var(--black);
+  padding: 1.5rem;
+  border-radius: 15px;
+  width: fit-content;
+  height: fit-content;
+  transform: rotate(90deg);
+}
+
 footer>.items {
   padding: 4rem;
   display: grid;
@@ -97,6 +129,9 @@ footer>.items {
 
 
 @media screen and (max-width: 900px) {
+  footer>.top-section {
+    padding: 2rem
+  }
 
   footer .items,
   .bottom {
