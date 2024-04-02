@@ -1,12 +1,10 @@
 
 import "./Services.css"
-import { lazy } from 'react'
 import designServices from "../../assets/design-services.svg"
 import itServices from "../../assets/it-services.svg"
 import award from "../../assets/award.svg"
 import categories from "../../assets/categories.svg"
 import profiles from "../../assets/profiles.svg"
-import AppIcon from "../../components/svgs/AppIcon"
 import appIcon from '../../assets/app-icon.svg'
 
 export default function Services() {

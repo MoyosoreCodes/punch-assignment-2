@@ -1,0 +1,17 @@
+.app-action {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  width: fit-content;
+  height: 50px;
+}
+
+.app-action>.icon {
+  width: fit-content;
+  transform: rotate(-90deg);
+}
+
+.app-action>.label {
+  font-size: 18px;
+}

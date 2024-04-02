@@ -2,6 +2,7 @@ import "./Testimonal.css";
 import grooveHQ from "../../assets/groovehq.svg"
 import grooveHQ2 from "../../assets/groovehq2.svg"
 import testimonalIcons from "../../assets/testimonial-icons.svg"
+import jason from "../../assets/jason.svg"
 
 export default function () {
   return (
@@ -9,8 +10,8 @@ export default function () {
       <div className="testimonial-section">
         <div className="left">
           <div className="title">
-            How it worked for Jason at
-            <img src={grooveHQ} loading="lazy" />
+            How it worked for Jason <img src={jason} className="user-profile" /> at
+            <img src={grooveHQ} loading="lazy" className="user-profile" />
           </div>
           <p className="subtext">
             Zwilt enabled us to deliver on time and they've been heavy hitters in our corner since.
@@ -39,7 +40,6 @@ export default function () {
         </div>
       </div>
       <div className="separator">
-
       </div>
     </section>
   )

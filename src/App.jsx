@@ -6,9 +6,9 @@ import HeroSection from './sections/hero-section/HeroSection';
 import Testimonal from './sections/testimonial/Testimonal';
 import Services from './sections/services/Services';
 import OurProcess from './sections/our-process/OurProcess';
+import JoinNow from './sections/join-now/JoinNow';
 
 function App() {
-
   return (
     <>
       <div className='website-container'>
@@ -18,6 +18,7 @@ function App() {
       <Services /> 
       <Testimonal />
       <OurProcess />
+      <JoinNow />
       <FAQ />
       <AppFooter />
     </>

@@ -17,8 +17,8 @@ export default function () {
         <div className="bottom">
           <div className="left">
             <ProcessStep label={<p><span className="step">Step 1: </span> Resume Screening</p>} />
-            <ProcessStep isOpen label={<p><span className="step">Step 2: </span> Video Interview</p>} >
-              <p>Candidates are assessed through skill based questions in a virtual setting. Allowing you to gauge personality and cultural fit.</p>
+            <ProcessStep open label={<p><span className="step">Step 2: </span> Video Interview</p>} >
+              <p className="step-content">Candidates are assessed through skill based questions in a virtual setting. Allowing you to gauge personality and cultural fit.</p>
             </ProcessStep>
             <ProcessStep label={<p><span className="step">Step 3: </span> Technical Evaluation</p>} />
             <ProcessStep label={<p><span className="step">Step 4: </span> Application Review</p>} />

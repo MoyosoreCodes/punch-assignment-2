@@ -5,7 +5,6 @@
   flex-direction: column;
   border-radius: 7px;
   gap: 1.5rem;
-  /* width: fit-content; */
   width: 600px;
   cursor: pointer;
 }
@@ -14,4 +13,11 @@
   align-items: center;
   display: flex;
   gap: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+
+  .process-step-container {
+    width: 100%;
+  }
 }

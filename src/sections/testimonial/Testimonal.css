@@ -23,16 +23,22 @@
 }
 
 .testimonial-section>.left {
-  width: 37%;
+  width: 460px;
 }
 
 .testimonial-section>.left>.title {
-  font-size: 2.7rem;
+  font-size: 30px;
+  /* width: 379px; */
 }
 
 .left>.subtext,
 .right>.subtext {
   color: rgba(198, 196, 196, 1);
+}
+
+.right>.subtext {
+  max-width: 500px;
+  text-align: left;
 }
 
 .testimonial-section>.right {
@@ -97,6 +103,12 @@
 .testimonial-section>.left>.title {
   color: white;
   text-align: left;
+  display: inline-block;
+}
+
+.testimonial-section>.left>.title>.user-profile {
+  display: inline-block;
+  margin: 0 0.7rem;
 }
 
 @media screen and (max-width: 900px) {

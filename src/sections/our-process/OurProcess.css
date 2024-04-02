@@ -19,16 +19,9 @@
 
 .how-section>.bottom {
   display: flex;
+  gap: 3rem;
   justify-content: space-between;
 }
-
-/* .how-section>.bottom>.left {
-  width: 37%;
-}
-
-.how-section>.bottom>.right {
-  width:;
-} */
 
 .how-section>.top>.title {
   text-align: left;
@@ -50,4 +43,28 @@
 
 .step {
   font-weight: 600;
+}
+
+@media screen and (max-width: 900px) {
+  .how-section-container {
+    padding: 6rem 2rem;
+  }
+
+  .how-section>.top {
+    width: 100%;
+  }
+
+  .how-section>.top>.title {
+    font-size: 1.7rem;
+  }
+
+  .how-section>.bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .how-section>.bottom>.left p.step-content {
+    text-align: left;
+  }
 }
