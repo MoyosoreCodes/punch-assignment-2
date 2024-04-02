@@ -1,0 +1,17 @@
+.process-step-container {
+  border: 1px solid #f0f0f0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  gap: 1.5rem;
+  /* width: fit-content; */
+  width: 600px;
+  cursor: pointer;
+}
+
+.process-step-container>.process-step {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}

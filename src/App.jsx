@@ -1,10 +1,11 @@
 import './App.css';
-import AppFooter from './components/AppFooter/AppFooter';
-import AppHeader from './components/AppHeader/AppHeader';
-import FAQ from './sections/FAQ/FAQ';
-import HeroSection from './sections/HeroSection/HeroSection';
-import Testimonal from './sections/Testimonal/Testimonal';
-import Services from './sections/Services/Services';
+import AppFooter from './components/app-footer/AppFooter';
+import AppHeader from './components/app-header/AppHeader';
+import FAQ from './sections/faq/FAQ';
+import HeroSection from './sections/hero-section/HeroSection';
+import Testimonal from './sections/testimonial/Testimonal';
+import Services from './sections/services/Services';
+import OurProcess from './sections/our-process/OurProcess';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       </div>
       <Services /> 
       <Testimonal />
+      <OurProcess />
       <FAQ />
       <AppFooter />
     </>
