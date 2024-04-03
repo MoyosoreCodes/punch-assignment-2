@@ -1,5 +1,5 @@
 .main>.title {
-  width: 670px;
+  max-width: 670px;
   text-align: center;
   margin: 0 auto 20px;
   line-height: 65px;
@@ -38,7 +38,7 @@
 }
 
 .main>.title>.image-slider>img:nth-of-type(3) {
-  background-color: purple;
+  background-color: yellow;
   animation: slider-right 10s infinite;
   z-index: 1;
 

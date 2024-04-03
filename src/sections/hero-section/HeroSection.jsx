@@ -1,12 +1,14 @@
 import { useState } from "react";
 import AppTabs from "../../components/app-tabs/AppTabs";
 import "./HeroSection.css";
+import jason from '../../assets/jason.svg'
+import purple from '../../assets/purple.svg'
 
 function HeroSection() {
 
   const [selectedTab, setSelectedTab] = useState(null);
   const ITServices = ["Python Developer", "Data Scientist", "Shopify Developer", "Shopify Developer", "Front End Developer", "Python Developer", "MERN Stack Developer", "Shopify Developer", "Full Stack Developer", "Full Stack Developer", "Python Developer", "Explore More"];
-  const DesignServices = ["Branding", "Email design", "Mobile Design", "Illustration Artist", "Photography", "Product design", "Unreal Engine   ", "Websites and web-apps", "Explore More"]
+  const DesignServices = ["Branding", "Email design", "Mobile Design", "Photography", "Email design", "Unreal Engine", "Illustration Artist", "Photography", "Product design", "Unreal Engine", "Websites and web-apps", "Explore More"]
 
   const options = ["IT & Development", "Design and Creative"];
   const tabContent = {
@@ -29,8 +31,8 @@ function HeroSection() {
       <div className="main">
         <p className="title">Finding the right fit{' '}
           <div className="image-slider">
-            <img src="" alt="test" />
-            <img src="" alt="test" />
+            <img src={purple} alt="test" />
+            <img src={jason} alt="test" />
             <img src="" alt="test" />
           </div>
           {" "}has never been easier.</p>

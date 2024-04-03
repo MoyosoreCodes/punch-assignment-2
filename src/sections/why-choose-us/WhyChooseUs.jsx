@@ -1,5 +1,8 @@
 import AppAction from '../../components/app-action/AppAction';
 import './WhyChooseUs.css';
+import bullet1 from "../../assets/bullet-point1.svg";
+import bullet2 from "../../assets/bullet-point2.svg";
+import bullet3 from "../../assets/bullet-point3.svg";
 
 export default function () {
   return <section className="why-section">
@@ -11,10 +14,19 @@ export default function () {
       <div className="items first">
         <div className="left-section">
           <p className="heading">Onboard without the risk.</p>
-          <ul>
-            <li>We pick the best for you to select</li>
-            <li>Thousands of vetted candidates in dozens of categories</li>
-            <li>Risk-free resource swapping for the best fit.</li>
+          <ul className='sub-items'>
+            <li>
+              <img src={bullet1} />
+              We pick the best for you to select
+            </li>
+            <li>
+              <img src={bullet1} />
+              Thousands of vetted candidates in dozens of categories
+            </li>
+            <li>
+              <img src={bullet1} />
+              Risk-free resource swapping for the best fit.
+            </li>
           </ul>
           <AppAction label="Learn More" />
         </div>
@@ -22,10 +34,19 @@ export default function () {
       <div className="items second">
         <div className="left-section">
           <p className="heading">An open book.</p>
-          <ul>
-            <li>Easy and transparent one-to-one chat with candidates.</li>
-            <li>Simple and convenient payment methods.</li>
-            <li>Review past ratings.</li>
+          <ul className='sub-items'>
+            <li>
+              <img src={bullet2} />
+              Easy and transparent one-to-one chat with candidates.
+            </li>
+            <li>
+              <img src={bullet2} />
+              Simple and convenient payment methods.
+            </li>
+            <li>
+              <img src={bullet2} />
+              Review past ratings.
+            </li>
           </ul>
           <AppAction label="Learn More" />
         </div>
@@ -33,10 +54,19 @@ export default function () {
       <div className="items third">
         <div className="left-section">
           <p className="heading">Stay in the loop.</p>
-          <ul>
-            <li>Track your staff activity down to every minute with screenshots.</li>
-            <li>Comprehensive timesheet data to process payments.</li>
-            <li>Create projects to organize and assign tasks more effectively.</li>
+          <ul className='sub-items'>
+            <li>
+              <img src={bullet3} />
+              Track your staff activity down to every minute with screenshots.
+            </li>
+            <li>
+              <img src={bullet3} />
+              Comprehensive timesheet data to process payments.
+            </li>
+            <li>
+              <img src={bullet3} />
+              Create projects to organize and assign tasks more effectively.
+            </li>
           </ul>
           <AppAction label="Learn More" />
         </div>
