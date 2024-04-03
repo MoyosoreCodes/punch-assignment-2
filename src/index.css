@@ -23,6 +23,7 @@
 
 * {
   margin: 0;
+  padding: 0;
 }
 
 .diagonal {
@@ -39,7 +40,7 @@
 
 .title {
   font-size: 3.2rem;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
 }
 

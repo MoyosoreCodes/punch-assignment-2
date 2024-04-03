@@ -6,6 +6,7 @@ import award from "../../assets/award.svg"
 import categories from "../../assets/categories.svg"
 import profiles from "../../assets/profiles.svg"
 import appIcon from '../../assets/app-icon.svg'
+import AppAction from "../../components/app-action/AppAction"
 
 export default function Services() {
   return (
@@ -58,12 +59,13 @@ export default function Services() {
         </div>
         <div className="item">
           <div className="left">
-            <div className="action">
+            {/* <div className="action">
               <div className="icon">
                 <img src={appIcon} />
               </div>
               <span>Explore More</span>
-            </div>
+            </div> */}
+            <AppAction label={'Explore More'} />
           </div>
           <div className="right">
             <p>

@@ -19,7 +19,7 @@
 
 .active {
   background: #C7F4C2;
-  font-weight: 600px;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 900px) {

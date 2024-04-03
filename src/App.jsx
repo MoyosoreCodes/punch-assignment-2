@@ -7,6 +7,7 @@ import Testimonal from './sections/testimonial/Testimonal';
 import Services from './sections/services/Services';
 import OurProcess from './sections/our-process/OurProcess';
 import JoinNow from './sections/join-now/JoinNow';
+import WhyChooseUs from './sections/why-choose-us/WhyChooseUs';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Testimonal />
       <OurProcess />
       <JoinNow />
+      <WhyChooseUs />
       <FAQ />
       <AppFooter />
     </>

@@ -1,17 +1,43 @@
+.app-action,
+.app-action>*,
+.app-action:hover>* {
+  transition: all 0.3s ease-in-out;
+}
+
+
 .app-action {
+  position: relative;
+  padding: 0;
   display: flex;
   align-items: center;
-  gap: 1rem;
-  cursor: pointer;
   width: fit-content;
-  height: 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.app-action:hover {
+  background-color: #202229;
 }
 
 .app-action>.icon {
-  width: fit-content;
-  transform: rotate(-90deg);
+  width: 100%;
+  position: absolute;
+  transform: translateX(0)
+}
+
+.app-action:hover>.icon {
+  transform: translateX(69.5%);
 }
 
 .app-action>.label {
-  font-size: 18px;
+  text-align: right;
+  margin: 0 20px 0 70px;
+  width: 100%;
+}
+
+.app-action:hover>.label {
+  text-align: left;
+  color: #EDEFFF;
+  margin: 0 70px 0 20px;
 }

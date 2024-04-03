@@ -5,7 +5,7 @@ import "./HeroSection.css";
 function HeroSection() {
 
   const [selectedTab, setSelectedTab] = useState(null);
-  const ITServices = ["Python Developer", "Data Scientist", "Shopify Developer", "Shopify Developer", "Front End Developer", "Python Developer", "MERN Stack Developer", "Shopify Developer", "Full Stack Developer","Full Stack Developer", "Python Developer", "Explore More"];
+  const ITServices = ["Python Developer", "Data Scientist", "Shopify Developer", "Shopify Developer", "Front End Developer", "Python Developer", "MERN Stack Developer", "Shopify Developer", "Full Stack Developer", "Full Stack Developer", "Python Developer", "Explore More"];
   const DesignServices = ["Branding", "Email design", "Mobile Design", "Illustration Artist", "Photography", "Product design", "Unreal Engine   ", "Websites and web-apps", "Explore More"]
 
   const options = ["IT & Development", "Design and Creative"];
@@ -27,7 +27,13 @@ function HeroSection() {
   return (
     <section className="hero-section">
       <div className="main">
-        <p className="title">Finding the right fit has never been easier.</p>
+        <p className="title">Finding the right fit{' '}
+          <div className="image-slider">
+            <img src="" alt="test" />
+            <img src="" alt="test" />
+            <img src="" alt="test" />
+          </div>
+          {" "}has never been easier.</p>
         <p className="subtext ">With our rigorous pre-vetting process, you'll never have to worry about finding the ideal candidate ever again.</p>
         {/* AppInput here */}
       </div>
