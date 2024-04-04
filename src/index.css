@@ -76,15 +76,14 @@ h6 {
 }
 
 /* Hide scrollbar for Chrome, Safari, and Edge */
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   width: 4px;
-  /* Set the width to 0 */
-}
+} */
 
 /* Hide scrollbar for Firefox */
-body {
+/* body {
   scrollbar-width: none;
-}
+} */
 
 #root,
 #__next {

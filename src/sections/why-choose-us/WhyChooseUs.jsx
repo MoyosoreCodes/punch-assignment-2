@@ -8,23 +8,6 @@ import { useEffect, useRef, useState } from 'react';
 
 export default function () {
   const containerRef = useRef(null);
-  const [scrollLeft, setScrollLeft] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (containerRef.current) {
-        setScrollLeft(containerRef.current.scrollLeft);
-      }
-      
-    };
-
-    const container = containerRef.current;
-    container.addEventListener('scroll', handleScroll);
-
-    return () => {
-      container.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return <section className="why-section-container">
     <section className="why-section">
@@ -95,11 +78,5 @@ export default function () {
         </div>
       </section>
     </section>
-
-    <div className="scrollbar-container">
-      <div className="scrollbar" ref={containerRef}>
-        <div className="scroll" style={{ left: `${scrollLeft}px` }}></div>
-      </div>
-    </div>
   </section>
 }
