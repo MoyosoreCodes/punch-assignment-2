@@ -23,6 +23,10 @@
 }
 
 .testimonial-section>.left {
+  gap: 2rem;
+}
+
+.testimonial-section>.left {
   width: 460px;
 }
 
@@ -104,12 +108,13 @@
   color: white;
   text-align: left;
   display: inline-block;
+  font-size: 40px;
 }
 
 .testimonial-section>.left>.title>.user-profile {
   display: inline-block;
-  margin: 0 0.7rem;
-  height: 32px;
+  margin: 0.2rem 0.5rem 0 0.7rem;
+  height: 35px;
 }
 
 @media screen and (max-width: 900px) {

@@ -3,6 +3,7 @@ import AppTabs from "../../components/app-tabs/AppTabs";
 import "./HeroSection.css";
 import jason from '../../assets/jason.svg'
 import purple from '../../assets/purple.svg'
+import heroInput from '../../assets/hero-input.svg';
 
 function HeroSection() {
 
@@ -31,13 +32,14 @@ function HeroSection() {
       <div className="main">
         <p className="title">Finding the right fit{' '}
           <div className="image-slider">
-            <img src={purple} alt="test" />
-            <img src={jason} alt="test" />
-            <img src="" alt="test" />
+            <img src={purple} alt="purple" />
+            <img src={jason} alt="jason" />
+            <img src="" alt="yellow" />
           </div>
           {" "}has never been easier.</p>
-        <p className="subtext ">With our rigorous pre-vetting process, you'll never have to worry about finding the ideal candidate ever again.</p>
+        <p className="subtext">With our rigorous pre-vetting process, you'll never have to worry about finding the ideal candidate ever again.</p>
         {/* AppInput here */}
+        <img src={heroInput} alt="hero-input" className="hero-input" />
       </div>
       <div className="services">
         <AppTabs options={options} onClick={(tab) => setSelectedTab(tab)} />

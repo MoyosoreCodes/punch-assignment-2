@@ -72,7 +72,7 @@
   background-color: white;
   padding: 4rem 2rem;
   border-radius: 20px;
-  min-width: 1300px;
+  min-width: 900px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -80,17 +80,20 @@
   background-image: url(../../assets/onboard.svg);
   background-repeat: no-repeat;
   background-position: right;
+  background-size: auto 100%;
 }
 
 .why-section>.right .second {
   background-image: url(../../assets/onboard2.svg);
   background-repeat: no-repeat;
+  background-size: auto 100%;
   background-position: right;
 }
 
 .why-section>.right .third {
   background-image: url(../../assets/onboard3.svg);
   background-repeat: no-repeat;
+  background-size: auto 100%;
   background-position: right;
 }
 
@@ -98,6 +101,9 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  height: 100%;
+  justify-content: center;
+  width: fit-content;
 }
 
 .right ul.sub-items {
