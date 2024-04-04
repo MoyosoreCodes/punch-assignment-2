@@ -17,6 +17,7 @@ function AppFooter() {
   return (
     <>
       <footer>
+        <div className="tilted"></div>
         <div className="top-section">
           <div className="footer-content diagonal">
             <h1>Need a job done, and done well? Get started</h1>

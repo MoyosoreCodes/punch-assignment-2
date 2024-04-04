@@ -59,12 +59,6 @@ export default function Services() {
         </div>
         <div className="item">
           <div className="left">
-            {/* <div className="action">
-              <div className="icon">
-                <img src={appIcon} />
-              </div>
-              <span>Explore More</span>
-            </div> */}
             <AppAction label={'Explore More'} />
           </div>
           <div className="right">

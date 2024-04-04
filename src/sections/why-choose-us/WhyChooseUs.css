@@ -1,7 +1,13 @@
-.why-section {
-  padding: 4rem;
+.why-section-container {
   display: flex;
-  gap: 3rem;
+  flex-direction: column;
+  gap: 6rem;
+  padding: 8rem 6rem;
+}
+
+.why-section {
+  display: flex;
+  gap: 6rem;
   color: #202229;
 }
 
@@ -11,8 +17,30 @@
 }
 
 .why-section>.left {
-  width: 380px;
+  width: 400px;
   align-self: flex-start;
+}
+
+.why-section-container>.scrollbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scrollbar-container>.scrollbar {
+  height: 9px;
+  background: #E1E3F8;
+  min-width: 630px;
+  border-radius: 35px;
+}
+
+.scrollbar>.scroll {
+  height: 100%;
+  max-width: 134px;
+  width: 134px;
+  background: #202229;
+  border-radius: 35px;
+  cursor: pointer;
 }
 
 
@@ -45,7 +73,7 @@
   padding: 4rem 2rem;
   border-radius: 20px;
   min-width: 1300px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 }
 
 .why-section>.right .first {
@@ -96,10 +124,23 @@
 
 @media screen and (max-width: 900px) {
 
+  .why-section-container,
   .why-section {
-    padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+  }
+
+  .why-section-container {
+    padding: 4rem 2rem;
+  }
+
+  .scrollbar-container>.scrollbar {
+    width: 100%;
+    display: none;
+  }
+
+  .why-section>.left {
+    width: 100%;
   }
 }

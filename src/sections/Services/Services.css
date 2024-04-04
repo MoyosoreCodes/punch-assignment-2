@@ -28,6 +28,15 @@
   align-items: center;
 }
 
+
+.services-section>.content>.item:nth-of-type(3)>.right {
+  outline: 1px solid blue;
+  min-width: max-content;
+display: flex;
+align-items: stretch;
+text-align: right;
+}
+
 .content>.item>.left {
   display: flex;
   flex-direction: column;
