@@ -1,4 +1,3 @@
-
 import "./Services.css"
 import designServices from "../../assets/design-services.svg"
 import itServices from "../../assets/it-services.svg"
@@ -11,13 +10,13 @@ import AppAction from "../../components/app-action/AppAction"
 export default function Services() {
   return (
     <section className="services-section diagonal">
-      <p className="title">Your one-stop marketplace for finding the talent your business needs.</p>
-      <div className="content">
+      <h1 className="title">Your one-stop marketplace for finding the talent your business needs.</h1>
+      <section className="content">
         <div className="item">
           <div className="left">
-            <p className="label">
+            <h3 className="label">
               Find Dev and IT professionals to scale your business.
-            </p>
+            </h3>
             <div className="sub">
               <div className="sub-item">
                 <img src={award} loading="lazy" />
@@ -35,9 +34,9 @@ export default function Services() {
         </div>
         <div className="item">
           <div className="left">
-            <p className="label">
+            <h3 className="label">
               Explore Creative individuals with a keen eye for detail.
-            </p>
+            </h3>
             <div className="sub">
               <div className="sub-item">
                 <img src={award} loading="lazy" />
@@ -68,7 +67,7 @@ export default function Services() {
             </p>
           </div>
         </div>
-      </div>
+      </section>
     </section>
   )
 };

@@ -1,13 +1,20 @@
+import { useState } from 'react';
 import AppLogo from '../app-logo/AppLogo';
 import './AppHeader.css';
 
 function AppHeader() {
-  function showMenu() {
+  const [menu, setMenu] = useState(false)
 
+  function showMenu() {
+    setMenu(prevState => !prevState)
+  }
+
+  function hideMenu() {
+    setMenu(false)
   }
 
   return (
-    <header className="header-container">
+    <nav className="header-container">
       <AppLogo />
 
       <ul className='nav-items'>
@@ -32,7 +39,25 @@ function AppHeader() {
           <path d="M4 12H7L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
         </svg>
       </div>
-    </header>
+
+      <div className={`mobile_navbar ${menu ? 'in-view' : ''}`}>
+        <ul className='nav-items'>
+          <li onClick={hideMenu}>Find work</li>
+          <li onClick={hideMenu}>Find Talent</li>
+          <li onClick={hideMenu}>Articles</li>
+          <li onClick={hideMenu}>About Us</li>
+          <li onClick={hideMenu}>Contact Us</li>
+        </ul>
+
+        <div className="login-section">
+          <p onClick={hideMenu}>Log In</p>
+          <button className='join' onClick={hideMenu}>
+            Join now
+          </button>
+        </div>
+      </div>
+
+    </nav>
   )
 }
 

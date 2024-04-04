@@ -6,11 +6,11 @@ import three from "../../assets/3.svg"
 
 export default function () {
   return <section className="join-container">
-    <p className="title">
+    <h1 className="title">
       Start your journey today
-    </p>
+    </h1>
 
-    <div className="items">
+    <section className="items">
       <div className="step1 diagonal">
         <div className="count">
           <img src={one} />
@@ -47,6 +47,6 @@ export default function () {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </section>
 }

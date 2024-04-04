@@ -5,16 +5,16 @@ import ProcessStep from "../../components/process-step/ProcessStep"
 export default function () {
   return (
     <section className="how-section-container">
-      <div className="how-section">
-        <div className="top">
-          <div className="title">
+      <section className="how-section">
+        <section className="top">
+          <h1 className="title">
             How we ensure you're in good hands.
-          </div>
+          </h1>
           <p className="subtext">
             With our comprehensive screening process, we hand-pick highly skilled candidates so you can onboard them in a matter of days.
           </p>
-        </div>
-        <div className="bottom">
+        </section>
+        <section className="bottom">
           <div className="left">
             <ProcessStep label={<p><span className="step">Step 1: </span> Resume Screening</p>} />
             <ProcessStep open label={<p><span className="step">Step 2: </span> Video Interview</p>} >
@@ -27,8 +27,8 @@ export default function () {
           <div className="right">
             <img src={ourProcess} />
           </div>
-        </div>
-      </div>
+        </section>
+      </section>
     </section>
   )
 }

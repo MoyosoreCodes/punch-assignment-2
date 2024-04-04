@@ -18,14 +18,14 @@ function AppFooter() {
     <>
       <footer>
         <div className="tilted"></div>
-        <div className="top-section">
+        <section className="top-section">
           <div className="footer-content diagonal">
             <h1>Need a job done, and done well? Get started</h1>
             <img src={appIcon} />
           </div>
-        </div>
-        <div className="items">
-          <div className="left">
+        </section>
+        <section className="items">
+          <section className="left">
             <div className="top">
               <AppLogo />
               <p>We take complex hiring processes - and simplify them. Connecting you to the world's highly qualified talent pool.</p>
@@ -37,10 +37,10 @@ function AppFooter() {
                 <button>Apply now</button>
               </div>
             </div>
-          </div>
-          <div className="right">
+          </section>
+          <section className="right">
             <h1>Connecting the right people to the right businesses.</h1>
-            <div className="footer-links">
+            <nav className="footer-links">
               {
                 Object.entries(footerLinks).map((item, index) => {
                   return <div className="items" key={index}>
@@ -53,17 +53,17 @@ function AppFooter() {
                   </div>
                 })
               }
-            </div>
-          </div>
-        </div>
+            </nav>
+          </section>
+        </section>
 
-        <div className="bottom">
+        <section className="bottom">
           <p>All rights reserved  by Zwilt</p>
           <div className="policy">
             <p>Privacy Policy</p>
             <p>Terms and Conditions</p>
           </div>
-        </div>
+        </section>
       </footer>
     </>
   )

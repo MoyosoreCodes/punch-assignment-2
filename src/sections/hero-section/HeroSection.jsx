@@ -29,24 +29,28 @@ function HeroSection() {
 
   return (
     <section className="hero-section">
-      <div className="main">
-        <p className="title">Finding the right fit{' '}
+      <section className="main">
+        <h1 className="title">Finding the right fit{' '}
           <div className="image-slider">
             <img src={purple} alt="purple" />
             <img src={jason} alt="jason" />
             <img src="" alt="yellow" />
           </div>
-          {" "}has never been easier.</p>
+          {" "}has never been easier.</h1>
         <p className="subtext">With our rigorous pre-vetting process, you'll never have to worry about finding the ideal candidate ever again.</p>
-        {/* AppInput here */}
-        <img src={heroInput} alt="hero-input" className="hero-input" />
-      </div>
-      <div className="services">
+        <div className="heroInput-container">
+          <input type="text" name="heroInput" id="heroInput" placeholder='design |' />
+          <div type='button'>
+            <img src={heroInput} alt="Input button" />
+          </div>
+        </div>
+      </section>
+      <section className="services">
         <AppTabs options={options} onClick={(tab) => setSelectedTab(tab)} />
         <div className="content">
           {tabContent[selectedTab]}
         </div>
-      </div>
+      </section>
     </section>
   );
 }

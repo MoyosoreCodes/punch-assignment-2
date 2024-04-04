@@ -32,7 +32,6 @@
 
 .testimonial-section>.left>.title {
   font-size: 32px;
-  /* width: 379px; */
 }
 
 .left>.subtext,
@@ -61,6 +60,7 @@
 .left>.actions>.first,
 .left>.actions>.second {
   width: fit-content;
+  cursor: pointer;
 }
 
 .left>.actions>.second {
@@ -125,14 +125,26 @@
     padding: 8rem 2rem;
   }
 
+  .left>.actions {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
   .testimonial-section>.left,
   .testimonial-section>.right {
     width: 100%;
   }
 
+  .testimonial-section>.left>.title,
+  .testimonial-section>.left>.subtext {
+    text-align: center;
+  }
+
   .testimonial-section>.right {
     display: flex;
-    padding: unset
+    padding: unset;
+    width: fit-content;
+    margin: 0 auto;
   }
 
   .testimonial-section>.right>.user>.details>.name {

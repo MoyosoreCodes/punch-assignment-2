@@ -29,3 +29,11 @@
     text-align: center;
   }
 }
+
+
+@media screen and (max-width: 370px) {
+  .tab-container {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+}

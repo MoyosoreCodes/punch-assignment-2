@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 6rem;
   padding: 8rem 6rem;
+  background: linear-gradient(to bottom, #ffffff, #ffffff 50%, #E1E3F8);
 }
 
 .why-section {
@@ -21,7 +22,7 @@
   align-self: flex-start;
 }
 
-.why-section-container>.scrollbar-container {
+/* .why-section-container>.scrollbar-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,8 +42,33 @@
   background: #202229;
   border-radius: 35px;
   cursor: pointer;
+} */
+
+.why-section-container>.scrollbar {
+  /* width: fit-content; */
+  /* margin: 0 auto; */
 }
 
+.scrollbar-container>.scrollbar {
+  height: 9px;
+  background: #E1E3F8;
+  max-width: 630px;
+  width: 100%;
+  border-radius: 2.1875rem;
+  position: relative;
+  margin: 0 auto;
+}
+
+.scrollbar>.scroll {
+  height: 9px;
+  max-width: 134px;
+  width: 100%;
+  background: #202229;
+  border-radius: 2.1875rem;
+  cursor: pointer;
+  position: absolute;
+  
+}
 
 .why-section>.left>.subtext {
   color: #202229;
@@ -129,6 +155,11 @@
 
 
 @media screen and (max-width: 900px) {
+
+  .why-section>.left>.title,
+  .why-section>.left>.subtext {
+    text-align: center;
+  }
 
   .why-section-container,
   .why-section {

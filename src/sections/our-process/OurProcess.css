@@ -18,7 +18,8 @@
 }
 
 .how-section>.bottom {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 3rem;
   justify-content: space-between;
 }
@@ -39,13 +40,27 @@
 
 .how-section>.bottom>.right {
   align-self: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.how-section>.bottom>.right>img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 
 .step {
   font-weight: 600;
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 1150px) {
+
+  .how-section>.top>.title,
+  .how-section>.top>.subtext {
+    text-align: center;
+  }
+
   .how-section-container {
     padding: 6rem 2rem;
   }
@@ -59,8 +74,7 @@
   }
 
   .how-section>.bottom {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 2rem;
   }
 

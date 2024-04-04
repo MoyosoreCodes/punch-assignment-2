@@ -15,9 +15,11 @@
 
 .services-section>.title {
   font-size: 3rem;
+  font-weight: 700;
   max-width: 900px;
   margin-bottom: 4rem;
   align-self: center;
+  color: #202229;
 }
 
 .services-section>.content>.item {
@@ -28,7 +30,11 @@
   align-items: center;
 }
 
-
+.services-section>.content>.item>.left>.label {
+  color: #202229;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
 
 .services-section>.content>.item:nth-of-type(3)>.left {
   padding-left: 2rem;
@@ -51,7 +57,7 @@
 .content>.item>.right>.detail {
   text-align: left;
   align-self: center;
-  width: 100%
+  /* width: 45% */
 }
 
 .content>.item>.left>.action>.icon {
@@ -67,12 +73,9 @@
 }
 
 .left>.sub>.sub-item {
+  font-size: 1rem;
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
-}
-
-.left>.sub>.sub-item {
   gap: 0.7rem
 }
 
@@ -112,6 +115,10 @@
     gap: 2rem
   }
 
+  .content>.item>.left>.label {
+    text-align: center;
+  }
+
   .services-section>.content>.item:last-child {
     flex-direction: column-reverse;
   }
@@ -122,7 +129,8 @@
 
   .left>.sub {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .content>.item>.left {

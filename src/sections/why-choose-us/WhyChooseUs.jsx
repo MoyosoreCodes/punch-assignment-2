@@ -4,22 +4,38 @@ import bullet1 from "../../assets/bullet-point1.svg";
 import bullet2 from "../../assets/bullet-point2.svg";
 import bullet3 from "../../assets/bullet-point3.svg";
 // import useCustomScroll from '../../hooks/useCustomScroll';
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export default function () {
-  const ref = useRef(null);
-  // const scrollY = useCustomScroll(ref);
+  const containerRef = useRef(null);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (containerRef.current) {
+        setScrollLeft(containerRef.current.scrollLeft);
+      }
+      
+    };
+
+    const container = containerRef.current;
+    container.addEventListener('scroll', handleScroll);
+
+    return () => {
+      container.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return <section className="why-section-container">
-    <div className="why-section">
-      <div className="left">
-        <div className="title">Why choose Zwilt?</div>
-        <div className="subtext">We take complex hiring processes - and simplify them. Connecting you to the world’s highly qualified talent pool.</div>
-      </div>
-      <div className="right" ref={ref}>
+    <section className="why-section">
+      <section className="left">
+        <h1 className="title">Why choose Zwilt?</h1>
+        <p className="subtext">We take complex hiring processes - and simplify them. Connecting you to the world’s highly qualified talent pool.</p>
+      </section>
+      <section className="right">
         <div className="items first">
           <div className="left-section">
-            <p className="heading">Onboard without the risk.</p>
+            <h3 className="heading">Onboard without the risk.</h3>
             <ul className='sub-items'>
               <li>
                 <img src={bullet1} />
@@ -39,7 +55,7 @@ export default function () {
         </div>
         <div className="items second">
           <div className="left-section">
-            <p className="heading">An open book.</p>
+            <h3 className="heading">An open book.</h3>
             <ul className='sub-items'>
               <li>
                 <img src={bullet2} />
@@ -59,7 +75,7 @@ export default function () {
         </div>
         <div className="items third">
           <div className="left-section">
-            <p className="heading">Stay in the loop.</p>
+            <h3 className="heading">Stay in the loop.</h3>
             <ul className='sub-items'>
               <li>
                 <img src={bullet3} />
@@ -77,12 +93,12 @@ export default function () {
             <AppAction label="Learn More" />
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
 
     <div className="scrollbar-container">
-      <div className="scrollbar">
-        <div className="scroll"></div>
+      <div className="scrollbar" ref={containerRef}>
+        <div className="scroll" style={{ left: `${scrollLeft}px` }}></div>
       </div>
     </div>
   </section>

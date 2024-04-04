@@ -7,12 +7,12 @@ import jason from "../../assets/jason.svg"
 export default function () {
   return (
     <section className="testimonial-section-container diagonal">
-      <div className="testimonial-section">
-        <div className="left">
-          <div className="title">
+      <section className="testimonial-section">
+        <section className="left">
+          <h1 className="title">
             How it worked for Jason <img src={jason} className="user-profile" /> at
             <img src={grooveHQ} loading="lazy" className="user-profile" />
-          </div>
+          </h1>
           <p className="subtext">
             Zwilt enabled us to deliver on time and they've been heavy hitters in our corner since.
           </p>
@@ -24,8 +24,8 @@ export default function () {
               <img src={testimonalIcons} />
             </div>
           </div>
-        </div>
-        <div className="right">
+        </section>
+        <section className="right">
           <div className="user">
             <img src={grooveHQ2} loading="lazy" />
             <div className="details">
@@ -37,8 +37,8 @@ export default function () {
           <p className="subtext">
             Zwilt enabled us to deliver on time and they've been heavy hitters in our corner since. Zwilt enabled us to deliver on time and they've been heavy hitters in our corner since.Zwilt enabled us to deliver on time and they've been heavy hitters.
           </p>
-        </div>
-      </div>
+        </section>
+      </section>
       <div className="separator">
       </div>
     </section>
