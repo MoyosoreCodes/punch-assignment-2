@@ -22,19 +22,23 @@
 
 .services-section>.content>.item {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 4rem;
   width: 100%;
   align-items: center;
 }
 
 
+
+.services-section>.content>.item:nth-of-type(3)>.left {
+  padding-left: 2rem;
+}
+
 .services-section>.content>.item:nth-of-type(3)>.right {
-  outline: 1px solid blue;
-  min-width: max-content;
-display: flex;
-align-items: stretch;
-text-align: right;
+  width: 45%;
+  display: flex;
+  align-items: stretch;
+  text-align: right;
 }
 
 .content>.item>.left {
@@ -47,7 +51,7 @@ text-align: right;
 .content>.item>.right>.detail {
   text-align: left;
   align-self: center;
-  width:100%
+  width: 100%
 }
 
 .content>.item>.left>.action>.icon {
@@ -81,8 +85,9 @@ text-align: right;
 }
 
 .right>p>.more {
- font-size: 18px;
+  font-size: 18px;
 }
+
 .right>p>.more {
   font-weight: 600;
 }
@@ -100,6 +105,7 @@ text-align: right;
     padding-top: 9rem;
     padding-bottom: 6rem;
   }
+
   .services-section>.content>.item {
     display: flex;
     flex-direction: column;
@@ -120,6 +126,10 @@ text-align: right;
   }
 
   .content>.item>.left {
+    width: 100%;
+  }
+
+  .services-section>.content>.item:nth-of-type(3)>.right {
     width: 100%;
   }
 }
