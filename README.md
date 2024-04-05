@@ -8,13 +8,13 @@ To run this application locally, follow these steps:
    git clone https://github.com/your-username/simple-react-app.git
 
 2. Install dependencies
-```
-npm install
-```
+   ```
+   npm install
+   ```
 
 
 ## Usage
 To start the development server and view the application in your browser , run:
-```
-npm run dev
-```
+   ```
+   npm run dev
+   ```
