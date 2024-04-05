@@ -5,7 +5,7 @@ To run this application locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   (https://github.com/MoyosoreCodes/punch-assignment-2.git)
+   https://github.com/MoyosoreCodes/punch-assignment-2.git
 
 2. Install dependencies
    ```
