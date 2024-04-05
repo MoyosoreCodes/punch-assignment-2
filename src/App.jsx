@@ -1,7 +1,7 @@
 import './App.css';
 import AppFooter from './components/app-footer/AppFooter';
 import AppHeader from './components/app-header/AppHeader';
-import FAQ from './sections/faq/FAQ';
+import FAQ from './sections/FAQ/FAQ';
 import HeroSection from './sections/hero-section/HeroSection';
 import Testimonal from './sections/testimonial/Testimonal';
 import Services from './sections/services/Services';
