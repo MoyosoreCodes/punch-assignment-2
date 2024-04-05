@@ -1,0 +1,111 @@
+section.join-container,
+.join-container>.items,
+.join-container>.items>.step1>.content,
+.join-container>.items>.step2>.content,
+.join-container>.items>.step3>.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+section.join-container {
+  padding: 8rem 6rem;
+  gap: 4rem
+}
+
+.join-container>.items {
+  gap: 1.5rem;
+}
+
+.join-container>.items>.step1,
+.join-container>.items>.step2,
+.join-container>.items>.step3 {
+  display: flex;
+  gap: 1rem;
+  padding: 4rem 2rem;
+  height: 370px;
+}
+
+.join-container>.items>.step1>.count,
+.join-container>.items>.step2>.count,
+.join-container>.items>.step3>.count {
+  align-self: flex-start;
+}
+
+.join-container>.items>.step1>.content,
+.join-container>.items>.step2>.content,
+.join-container>.items>.step3>.content {
+  gap: 2rem;
+}
+
+.join-container>.items>.step1>.content>.heading,
+.join-container>.items>.step2>.content>.heading,
+.join-container>.items>.step3>.content>.heading,
+.join-container>.items>.step1>.content>.subtext,
+.join-container>.items>.step2>.content>.subtext,
+.join-container>.items>.step3>.content>.subtext {
+  max-width: 400px;
+}
+
+.join-container>.items>.step1>.content>.heading,
+.join-container>.items>.step2>.content>.heading,
+.join-container>.items>.step3>.content>.heading {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.step1 {
+  background: rgba(237, 239, 255, 0.8);
+  background-image: url(../../assets/Join1.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.step2 {
+  background: rgba(255, 190, 46, 0.2);
+  background-image: url(../../assets/Join2.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.step3 {
+  background: rgba(214, 214, 214, 0.4);
+  background-image: url(../../assets/Join3.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+@media screen and (max-width: 900px) {
+  section.join-container {
+    padding: 2rem;
+    gap: 4rem
+  }
+
+  .join-container>.items>.step1,
+  .join-container>.items>.step2,
+  .join-container>.items>.step3 {
+    height: fit-content;
+  }
+
+  .join-container>.items>.step1>.content>.heading,
+  .join-container>.items>.step2>.content>.heading,
+  .join-container>.items>.step3>.content>.heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .step1 {
+    background: rgba(237, 239, 255, 0.8);
+    background-image: none;
+  }
+
+  .step2 {
+    background: rgba(255, 190, 46, 0.2);
+    background-image: none;
+  }
+
+  .step3 {
+    background: rgba(214, 214, 214, 0.4);
+    background-image: none;
+  }
+}
