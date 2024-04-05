@@ -1,13 +1,13 @@
 import './App.css';
 import AppFooter from './components/app-footer/AppFooter';
 import AppHeader from './components/app-header/AppHeader';
-import FAQ from './sections/FAQ/FAQ';
-import HeroSection from './sections/HeroSection/HeroSection';
-import Testimonal from './sections/Testimonial/Testimonal';
-import Services from './sections/Services/Services';
-import OurProcess from './sections/OurProcess/OurProcess';
-import JoinNow from './sections/JoinNow/JoinNow';
-import WhyChooseUs from './sections/WhyChooseUs/WhyChooseUs';
+import FAQ from './sections/FAQ';
+import HeroSection from './sections/hero-section';
+import Testimonal from './sections/Testimonial';
+import Services from './sections/Services';
+import OurProcess from './sections/our-process';
+import JoinNow from './sections/join-now';
+import WhyChooseUs from './sections/why-choose-us/WhyChooseUs';
 
 function App() {
   return (
