@@ -1,8 +1,20 @@
-# React + Vite
+# Punch MERN Assessment Round 2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Installation
+To run this application locally, follow these steps:
 
-Currently, two official plugins are available:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/simple-react-app.git
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. Install dependencies
+```
+npm install
+```
+
+
+## Usage
+To start the development server and view the application in your browser , run:
+```
+npm run dev
+```
