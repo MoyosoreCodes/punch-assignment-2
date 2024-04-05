@@ -1,11 +1,11 @@
-# Punch MERN Assessment Round 2
+  # Punch MERN Assessment Round 2
 
 ## Installation
 To run this application locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/simple-react-app.git
+   (https://github.com/MoyosoreCodes/punch-assignment-2.git)
 
 2. Install dependencies
    ```
