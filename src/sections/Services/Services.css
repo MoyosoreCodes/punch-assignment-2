@@ -41,7 +41,7 @@
 }
 
 .services-section>.content>.item:nth-of-type(3)>.right {
-  width: 45%;
+  width: 35%;
   display: flex;
   align-items: stretch;
   text-align: right;
